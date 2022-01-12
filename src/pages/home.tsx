@@ -9,7 +9,5 @@ function Home(){
     )
 }
 
-function Footer(){
-    
-}
-export{Home, Footer} 
+
+export default Home
