@@ -1,18 +1,17 @@
 import React from "react";
-
-import NavBar from "../components/navbar";
-
 import { Link } from "react-router-dom";
-
+import NavBar from "../components/navbar";
 import '../styles/global.css'
 
 
 function Home(){
     return(
         <div>
-            <NavBar></NavBar>
-            <Link to="/profile"> Perfil</Link> 
+
+            <NavBar></NavBar>    
+        
         </div>
     )
-}
+    }
+
 export default Home
