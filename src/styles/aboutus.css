@@ -1,0 +1,29 @@
+.container{
+
+  display: flex;
+  margin-top: 2%;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.content{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 80vh;
+
+}
+.content p {
+  margin-right: 4rem;
+}
+.container h1{
+  color: var(--blue);
+  font-size: 60px;
+  padding-top: 10%;
+}
+

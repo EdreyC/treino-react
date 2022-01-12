@@ -1,19 +1,47 @@
-* {
-  text-decoration: none;
-}
+
 .Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+
+
+}
+.logotipo{
+  color: #06f;
+  font-size: 48px;
 }
 .Lista-NavBar {
   display: flex;
-  background-color: transparent;
-  padding-top: 2rem;
-  gap: 2%;
+  gap: 20px;
+  margin-right: 20px;
 }
-.Lista-NavBar a {
+.Link{
+
   font-size: 15px;
   padding: 10px 15px 10px 15px;
-  background-color: #06f;
+  color: #19191a;
+  text-decoration: none;
+  border-radius: 0.25rem;
+
+}
+.Link:hover{
+  text-decoration: underline;
+  color: var(--blue);
+
+}
+.Sign{
+
+  font-family: 'Inter';
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--blue);
   color: aliceblue;
-  font-style: normal;
+  text-decoration: none;
   border-radius: 0.25rem;
 }
+.Sign:hover{
+  background-color: #1f79ff;
+}
+
