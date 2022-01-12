@@ -1,0 +1,19 @@
+* {
+  text-decoration: none;
+}
+.Container {
+}
+.Lista-NavBar {
+  display: flex;
+  background-color: transparent;
+  padding-top: 2rem;
+  gap: 2%;
+}
+.Lista-NavBar a {
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
+  background-color: #06f;
+  color: aliceblue;
+  font-style: normal;
+  border-radius: 0.25rem;
+}
