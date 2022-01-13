@@ -1,0 +1,71 @@
+.container{
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    outline: 1px solid #d1d1d1;
+    border-radius: 0.25rem;
+    padding: 8em;
+
+}
+.title{
+    font-size: 50px;
+    color: var(--blue);
+
+}
+.box label{
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 15px;
+}
+.form{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.form .input{
+    padding: 0.5em;
+    font-size: 14px;
+    font-family: 'Inter';
+    outline: none;
+
+
+}
+.eyebutton{
+    border: none;
+    display: flex;
+    width: 45px;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    align-items: center;
+}
+
+.box-pass{
+    border: 1px solid gray;
+    display: flex;
+    padding: 0.5em;
+    border-radius: 0.25rem;
+}
+.eyeicon{
+    
+}
+.pass{
+    border: none;
+    outline: none;
+    width: 100%;
+
+    font-family: 'Inter';
+}
+
+.Google{
+    margin-left: 24px;
+}
+
+.Facebook{
+    margin-left: 5px;
+}

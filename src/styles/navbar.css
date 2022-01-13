@@ -11,6 +11,7 @@
 .logotipo{
   color: #06f;
   font-size: 48px;
+  cursor: pointer;
 }
 .Lista-NavBar {
   align-items: center;
@@ -30,6 +31,7 @@
   justify-content: center;
   text-align: center;
   font-weight: 700;
+  transition: all ease-in 0.08s;
 
 }
 .Link:hover{

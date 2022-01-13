@@ -2,8 +2,7 @@
 
   display: flex;
   margin-top: 2%;
-  text-align: center;
-  justify-content:center;
+
   align-items: center;
   flex-direction: column;
 
@@ -21,7 +20,7 @@
 .content p {
   margin-right: 4rem;
 }
-.container h1{
+.aboutus-text{
   color: var(--blue);
   font-size: 60px;
   padding-top: 10%;

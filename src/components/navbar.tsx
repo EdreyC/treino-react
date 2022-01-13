@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/navbar.css'
-import ButtonAzulzinho from '../components/button'
+import Button from '../components/button'
 
 import { BiHomeAlt } from "react-icons/bi";
 
@@ -24,16 +24,15 @@ function NavBar(){
           <Link className="Link" to='/Profile'>Perfil</Link>
           <Link className="Link"to='/aboutus'>About us</Link>
           
+
           <Link to='/Signin'>
-            <ButtonAzulzinho>Sign In</ButtonAzulzinho>
+            <Button>Sign In</Button>
           </Link>
      
         
           <Link to='/Signup'>
-            <ButtonAzulzinho>Sign Up</ButtonAzulzinho>
+            <Button>Sign Up</Button>
           </Link>
-
-        
 
       </div>
     </div>

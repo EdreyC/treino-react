@@ -3,7 +3,7 @@ import '../styles/button.css'
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
-export default function ButtonAzulzinho(props: ButtonProps){
+export default function Button(props: ButtonProps){
     return(
         <button className="button"{...props}/>
     )
