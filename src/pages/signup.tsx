@@ -8,6 +8,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import Button from '../components/button'
 
 function SignUp() {
+
     return (
         <div className="container">
             <div className="box">
@@ -44,7 +45,8 @@ function SignUp() {
                     </Button>
 
                     <div className="">
-                        <Button>Cadastrar</Button>
+                      
+                        <Button ></Button>
                     </div>
 
                     </div>

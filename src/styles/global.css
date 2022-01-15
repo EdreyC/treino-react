@@ -13,3 +13,7 @@ a,p{
     font-family: 'Inter';
     text-decoration: none;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

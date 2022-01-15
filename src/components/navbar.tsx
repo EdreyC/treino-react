@@ -21,7 +21,11 @@ function NavBar(){
           </Link>
 
 
-          <Link className="Link" to='/Profile'>Perfil</Link>
+          <Link className="text-black-gray rounded-2xl text-sm font-content font-bold px-4 py-2.5 
+          
+          hover:text-ios-blue hover:bg-slate-50"
+          
+          to='/Profile'>Perfil</Link>
           <Link className="Link"to='/aboutus'>About us</Link>
           
 
