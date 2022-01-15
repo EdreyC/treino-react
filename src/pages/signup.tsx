@@ -14,10 +14,11 @@ function SignUp() {
         <div className="flex justify-center mt-8">
 
             <div className="flex justify-center flex-col outline outline-1 outline-slate-300
-            p-28 rounded
+            px-28 py-14 gap-5 rounded
             ">
                 
-                <h1 className="title">Cadastre-se</h1>
+                <h1 className="text-ios-blue">Cadastre-se</h1>
+                
                 <div className="form">
                 <Button>
                         Cadastre-se com Google
@@ -50,7 +51,7 @@ function SignUp() {
               
                    
 
-                    <div className="flex gap-7 justify-center">
+                    <div className="flex gap-7 justify-center mt-11">
 
                         <Button>Cadastrar</Button>
                         <ButtonOutline>Cancelar</ButtonOutline>
