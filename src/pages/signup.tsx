@@ -17,7 +17,7 @@ function SignUp() {
             px-28 py-14 gap-5 rounded
             ">
                 
-                <h1 className="text-ios-blue">Cadastre-se</h1>
+                <h1 className="text-ios-blue text-center">Cadastre-se</h1>
                 
                 <div className="form">
                 <Button>
