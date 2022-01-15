@@ -1,0 +1,38 @@
+:root{
+    --blue: #06f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+a,p{
+    font-family: 'Inter';
+    text-decoration: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1{
+       @apply text-5xl font-title font-bold;
+    }
+}
+
+@layer components {
+ 
+ 
+    .link-navbar{
+        @apply text-black-gray rounded-2xl text-sm-15 font-content font-bold px-4 py-2.5 
+        hover:text-ios-blue hover:bg-slate-50;
+    }
+    .ipt-primary{
+        @apply p-2 text-sm font-content outline-none border border-gray-400
+        rounded
+    }
+  }

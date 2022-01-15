@@ -6,36 +6,20 @@ import { BsGoogle } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 
 import Button from '../components/button'
+import ButtonOutline from "../components/buttonoutline";
 
 function SignUp() {
 
     return (
-        <div className="container">
-            <div className="box">
+        <div className="flex justify-center mt-8">
+
+            <div className="flex justify-center flex-col outline outline-1 outline-slate-300
+            p-28 rounded
+            ">
+                
                 <h1 className="title">Cadastre-se</h1>
                 <div className="form">
-
-                    <label htmlFor="nome">Nome</label>
-                    <input className="input" type="text" name="nome" id="" />
-
-                
-                    <label htmlFor="email">Email</label>
-    
-                    <input className="input" type="text" name="email" id="" />
-  
-                 
-
-                    <label htmlFor="senha">Senha</label>
-
-                    <div className="box-pass">
-                        <input className="pass" type="text" name="senha" id="" />
-                        <button className="eyebutton" >
-                            <FiEye className="eyeicon" size={23}></FiEye></button>
-                        
-                    </div>
-                       
-              
-                    <Button>
+                <Button>
                         Cadastre-se com Google
                         <BsGoogle size={20} className="Google"></BsGoogle>
                     </Button>
@@ -44,9 +28,32 @@ function SignUp() {
                         <FaFacebookF size={20} className="Facebook"></FaFacebookF>
                     </Button>
 
-                    <div className="">
-                      
-                        <Button ></Button>
+                    <label htmlFor="nome">Nome</label>
+                    <input className="ipt-primary" type="text" name="nome" id="" />
+
+                
+                    <label htmlFor="email">Email</label>
+    
+                    <input className="ipt-primary" type="text" name="email" id="" />
+  
+                 
+
+                    <label htmlFor="senha">Senha</label>
+
+                    <div className="flex border border-gray-400 p-2 rounded ">
+                        <input className="border-none outline-none w-full font-content text-sm" type="text" name="senha" id="" />
+                        <button className="border-none flex w-11 text-slate-800 justify-center cursor-pointer bg-none items-center hover:text-ios-blue" >
+                            <FiEye className="eyeicon" size={23}></FiEye></button>
+                        
+                    </div>
+                       
+              
+                   
+
+                    <div className="flex gap-7 justify-center">
+
+                        <Button>Cadastrar</Button>
+                        <ButtonOutline>Cancelar</ButtonOutline>
                     </div>
 
                     </div>
