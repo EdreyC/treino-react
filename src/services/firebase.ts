@@ -21,12 +21,13 @@ function handleSignUp(){
   const auth = getAuth();
   signInWithPopup(auth, provider)
   .then((result) => {
-  // This gives you a Google Access Token. You can use it to access the Google API.
-  const credential = GoogleAuthProvider.credentialFromResult(result);
-    console.log(result)
 
-  // The signed-in user info.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    console.log(result)
+    console.log(credential)
+
   const user = result.user;
+  console.log(user)
   // ...
 }).catch((error) => {
   console.log(error)
