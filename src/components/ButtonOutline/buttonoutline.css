@@ -1,0 +1,22 @@
+.button-outline{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    gap: 3.5px;
+    outline: none;
+    justify-content: center;
+    background: none;
+    transition: all ease-in-out 0.1s;
+}
+.button-outline:hover{
+    cursor: pointer;
+    border: 1px solid #69a5ff;
+    color: #69a5ff;
+
+}

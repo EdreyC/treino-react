@@ -1,0 +1,16 @@
+:root{
+    --blue: #06f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+a,p,span{
+    font-family: 'Inter';
+    text-decoration: none;
+}
+

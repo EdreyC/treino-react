@@ -1,0 +1,30 @@
+.box-pass{
+    border: 1px solid gray;
+    display: flex;
+    padding: 0.5em;
+    border-radius: 0.25rem;
+}
+.eyebutton{
+    border: none;
+    display: flex;
+    width: 45px;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    align-items: center;
+}
+
+
+.eyeicon{
+    color: #1e1f20;
+}
+.eyeicon:hover{
+    color: var(--blue);
+}
+.pass{
+    border: none;
+    outline: none;
+    width: 100%;
+
+    font-family: 'Inter';
+}

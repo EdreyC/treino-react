@@ -1,11 +1,10 @@
 
-.Container {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1% 2%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
-
 
 }
 .logotipo{
@@ -13,8 +12,9 @@
   font-size: 48px;
   cursor: pointer;
 }
-.Lista-NavBar {
+.lista-navbar {
   align-items: center;
+
   display: flex;
   gap: 20px;
   margin-right: 20px;

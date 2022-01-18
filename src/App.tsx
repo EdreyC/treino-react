@@ -2,10 +2,12 @@ import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 import MainRoutes from './routes'
-import './css/global.css'
-import NavBar from './components/navbar';
+import './styles/global.css'
+import NavBar from './components/NavBar/navbar'
+
 
 function App() {
+  
   return (
       <Router>
         <NavBar></NavBar>   

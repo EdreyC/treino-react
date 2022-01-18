@@ -6,7 +6,7 @@ import '../styles/aboutus.css'
 function AboutUs() {
     return (
         <div>
-            <div className="Container">
+            <div className="container">
                 <h1 className="aboutus-text">Sobre Nós</h1>
               
 

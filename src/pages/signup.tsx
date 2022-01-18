@@ -1,26 +1,32 @@
 import React from "react";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import '../styles/signup.css'
-import { FiEye } from "react-icons/fi";
-import { FiEyeOff } from "react-icons/fi";
+import handleSignUp from "../services/firebase";
+
 import { BsGoogle } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 
-import Button from '../components/button'
-import ButtonOutline from "../components/buttonoutline";
+import PassInput from "../components/PassInput/passinput";
+import Button from '../components/Button/button'
+import ButtonOutline from "../components/ButtonOutline/buttonoutline";
 
 function SignUp() {
 
-    return (
-        <div className="flex justify-center mt-8">
+    
 
-            <div className="flex justify-center flex-col outline outline-1 outline-slate-300
-            px-28 py-14 gap-5 rounded
-            ">
+
+    return (
+
+        <div className="signup-container">
+
+            <div className="page-signup">
                 
-                <h1 className="text-ios-blue text-center">Cadastre-se</h1>
+                <h1 className="signup-title">Cadastre-se</h1>
+                <span>Porfavor cadastre a sua conta para poder continuar no app </span>
                 
-                <div className="form">
-                <Button>
+                <div className="signup-form">
+
+                    <Button onClick={handleSignUp}>
                         Cadastre-se com Google
                         <BsGoogle size={20} className="Google"></BsGoogle>
                     </Button>
@@ -29,37 +35,30 @@ function SignUp() {
                         <FaFacebookF size={20} className="Facebook"></FaFacebookF>
                     </Button>
 
+                    <span>Obrigatório preencher todos os campos</span>
+
                     <label htmlFor="nome">Nome</label>
-                    <input className="ipt-primary" type="text" name="nome" id="" />
+                    <input placeholder="Digite seu nome"className="input" type="text" name="nome" id="" />
 
                 
                     <label htmlFor="email">Email</label>
     
-                    <input className="ipt-primary" type="text" name="email" id="" />
+                    <input placeholder="Digite seu email" className="input" type="text" name="email" id="" />
   
                  
 
                     <label htmlFor="senha">Senha</label>
+                    <PassInput placeholder="Digite sua senha"></PassInput>
 
-                    <div className="flex border border-gray-400 p-2 rounded ">
-                        <input className="border-none outline-none w-full font-content text-sm" type="text" name="senha" id="" />
-                        <button className="border-none flex w-11 text-slate-800 justify-center cursor-pointer bg-none items-center hover:text-ios-blue" >
-                            <FiEye className="eyeicon" size={23}></FiEye></button>
-                        
-                    </div>
-                       
-              
-                   
-
-                    <div className="flex gap-7 justify-center mt-11">
-
-                        <Button>Cadastrar</Button>
+                    <div className="container-buttons-signup">
+                        <Button>Cadastre-se</Button>
                         <ButtonOutline>Cancelar</ButtonOutline>
+
                     </div>
 
                     </div>
-            </div>
-      
+  
+            </div>          
         </div>
     )
 }
