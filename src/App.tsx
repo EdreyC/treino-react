@@ -7,12 +7,14 @@ import NavBar from './components/NavBar/navbar'
 
 
 function App() {
-  
+ 
   return (
+
       <Router>
-        <NavBar></NavBar>   
+
+        <NavBar></NavBar>
         <MainRoutes/>
-  
+
       </Router>
   );
 }

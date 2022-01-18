@@ -6,6 +6,7 @@ import { BiHomeAlt } from "react-icons/bi";
 
 function NavBar() {
   return (
+    
     <div className="navbar">
 
 

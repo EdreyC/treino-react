@@ -7,7 +7,6 @@ import {
 import App from './App'
 import Home from './pages/home'
 import Profile from "./pages/profile";
-import SignIN from "./pages/signin";
 import AboutUs from "./pages/aboutus";
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
