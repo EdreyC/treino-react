@@ -1,7 +1,6 @@
 
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { useHistory } from "react-router-dom";
 
 
 const firebaseConfig = {
