@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import '../styles/signup.css'
 import {handleSignUpTwitter }from "../services/firebase";
 
@@ -10,41 +10,11 @@ import Button from '../components/Button/button'
 import ButtonOutline from "../components/ButtonOutline/buttonoutline";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../App";
 
 function SignUp() {
+    const {SignInWithGoogle} = useContext(AuthContext)
 
-
-    function HandleSignUpGoogle(){
-
-        //const navigate = useNavigate();
-        const provider = new GoogleAuthProvider();
-        const auth = getAuth();
-      
-        signInWithPopup(auth, provider).then((result) => {
-      
-          const credential = GoogleAuthProvider.credentialFromResult(result);
-          console.log(result)
-          console.log(credential)
-      
-          const user = result.user;
-          console.log(user)
-        
-      }).catch((error) => {
-        console.log(error)
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
-      });
-      
-      //navigate('/profile')
-      
-      
-        }
     return (
 
         <div className="signup-container">
@@ -56,7 +26,7 @@ function SignUp() {
                 
                 <div className="signup-form">
 
-                    <Button onClick={HandleSignUpGoogle }>
+                    <Button onClick={SignInWithGoogle} >
                         Cadastre-se com Google
                         <BsGoogle size={20} className="Google"></BsGoogle>
                     </Button>
