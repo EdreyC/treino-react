@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './navbar.css'
 import Button from '../Button/button'
 import { BiHomeAlt } from "react-icons/bi";
+import { AuthContext } from "../../contexts/AuthContext";
 
 function NavBar() {
+
   return (
     
     <div className="navbar">
