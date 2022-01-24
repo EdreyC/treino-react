@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import './navbar.css'
 import Button from '../Button/button'
 import { BiHomeAlt } from "react-icons/bi";
-import { AuthContext } from "../../contexts/AuthContext";
+import { useAuth } from "../../hooks/useAuth";
 
 function NavBar() {
+
+  const {user} = useAuth()
+  
 
   return (
     
@@ -23,15 +26,34 @@ function NavBar() {
         <Link className="Link" to='/Profile'>Perfil</Link>
         <Link className="Link"to='/aboutus'>About us</Link>
 
+      {user ? (
+        <>
+          <span>
+            Welcome 
 
-        <Link to='/Signin'>
-          <Button>Sign In</Button>
-        </Link>
-
-
-        <Link to='/Signup'>
-          <Button>Sign Up</Button>
-        </Link>
+            <div className="nav-profile">
+              <Link to='/profile'>
+                 <img src={user?.avatar} alt="" />
+                  {user?.name}
+              </Link>
+           
+            </div>
+            
+          </span>
+        </>
+      ) : (
+        <> 
+            <Link to='/Signin'>
+            <Button>Sign In</Button>
+            </Link>
+            
+            <Link to='/Signup'>
+            <Button>Sign Up</Button>
+            </Link>
+        </>
+        
+      )}
+      
 
       </div>
     </div>

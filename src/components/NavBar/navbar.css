@@ -19,6 +19,31 @@
   gap: 20px;
   margin-right: 20px;
 }
+.lista-navbar img{
+  border-radius: 50%;
+  width: 50px;
+  margin-left: 0.4rem;
+}
+.lista-navbar span{
+  display: flex;
+  align-items: center;
+}
+.nav-profile a{
+  margin-left:0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem 0.5rem 0.3rem;
+  border-radius: 1rem;
+  color: black;
+
+}
+.nav-profile a:hover{
+ /*text-decoration: underline;*/
+ color: var(--blue);
+
+}
 .Link{
   gap: 5px;
   font-size: 15px;

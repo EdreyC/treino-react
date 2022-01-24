@@ -1,3 +1,84 @@
 .page-profile{
+   display: flex;
+   flex-direction: column;
 
+}
+.container-profile{
+    margin-left: 2rem;
+  display: flex;
+    
+}
+.profile-data{
+  margin-top: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+}
+.avatar{
+  border-radius: 100%;
+  outline: 7px solid #ffffff;
+  margin-top: -3rem;
+}
+/*.userName{
+
+}*/
+.avatarUser{
+  border-radius: 50%;
+}
+.banner{
+  background: var(--blue);
+  padding-bottom: 17%;
+}
+
+.linksProfile a{
+
+  color: black;
+  margin: 15px;
+}
+/*.linksProfile{
+
+}*/
+.container-posts{
+  display: flex;
+  justify-content: center;
+  padding-right: 20rem;
+}
+.posts{
+  width: 68%;
+  border: 1px solid #d4d4d4;
+  color: black;
+  /*margin-left: 20%;
+  margin-right: 30%;*/
+  border-radius: 0px 12px 12px 12px;
+  padding: 1rem;
+  
+  
+}
+.userName{
+  margin-left: 2rem;
+}
+
+.user{
+  font-weight: 700;
+}
+.posts span{
+  font-size: 12px;
+}
+.posts a{
+  color: black;
+  
+}
+.informacoes{
+  display: flex;
+  align-items: center;
+
+}
+.informacoes div{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.informacoes a:hover{
+  color: var(--blue);
+  text-decoration: underline;
 }

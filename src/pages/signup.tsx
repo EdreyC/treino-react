@@ -6,7 +6,7 @@ import PassInput from "../components/PassInput/passinput";
 import Button from '../components/Button/button'
 import ButtonOutline from "../components/ButtonOutline/buttonoutline";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
 
@@ -19,7 +19,7 @@ function SignUp() {
             <div className="page-signup">
                 
                 <h1 className="signup-title">Cadastre-se</h1>
-                <span>Porfavor cadastre a sua conta para poder continuar no app </span>
+                <span>Para se autenticar com o google clique <Link to="/signin">aqui</Link></span>
                 
                 <div className="signup-form">
 
