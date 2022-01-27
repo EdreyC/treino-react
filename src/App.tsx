@@ -2,7 +2,7 @@
 import {BrowserRouter as Router} from 'react-router-dom';
 
 import MainRoutes from './routes'
-import './styles/global.css'
+import './styles/global.scss'
 import NavBar from './components/NavBar/navbar'
 import { AuthContextProvider } from './contexts/AuthContext';
 

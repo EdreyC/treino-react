@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './navbar.css'
+import './navbar.scss'
 import Button from '../Button/button'
 import { BiHomeAlt } from "react-icons/bi";
 import { useAuth } from "../../hooks/useAuth";
@@ -15,7 +15,7 @@ function NavBar() {
     <div className="navbar">
 
 
-      <h1 className="logotipo">Teste.</h1>
+      <h1 >Teste.</h1>
 
       <div className="lista-navbar">
 
@@ -31,7 +31,7 @@ function NavBar() {
           <span>
             Welcome 
 
-            <div className="nav-profile">
+            <div>
               <Link to='/profile'>
                  <img src={user?.avatar} alt="" />
                   {user?.name}

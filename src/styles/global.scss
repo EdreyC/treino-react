@@ -1,6 +1,5 @@
-:root{
-    --blue: #06f;
-}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,5 +11,8 @@ h1{
 a,p,span{
     font-family: 'Inter';
     text-decoration: none;
+}
+body,input,button,textarea{
+    font: 400 16px 'Inter', sans-serif;
 }
 

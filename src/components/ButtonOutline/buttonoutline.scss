@@ -1,11 +1,14 @@
+@use '../../styles/variables' as v;
+
+
 .button-outline{
     display: flex;
     align-items: center;
     font-family: 'Inter';
     font-size: 15px;
     padding: 10px 15px 10px 15px;
-    border: 1px solid var(--blue);
-    color: var(--blue);
+    border: 1px solid v.$blue;
+    color:  v.$blue;
     text-decoration: none;
     border-radius: 0.25rem;
     gap: 3.5px;

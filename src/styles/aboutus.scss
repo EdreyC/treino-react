@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 .container{
 
   display: flex;
@@ -21,7 +23,7 @@
   margin-right: 4rem;
 }
 .aboutus-text{
-  color: var(--blue);
+  color:  v.$blue;
   font-size: 60px;
   padding-top: 10%;
 }

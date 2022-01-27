@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { BsGoogle } from "react-icons/bs";
 import Button from "../components/Button/button";
-import '../styles/signin.css'
+import '../styles/signin.scss'
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 

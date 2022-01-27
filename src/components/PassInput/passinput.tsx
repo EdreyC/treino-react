@@ -2,7 +2,7 @@ import { InputHTMLAttributes, useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
 
-import './passinput.css'
+import './passinput.scss'
 type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
 

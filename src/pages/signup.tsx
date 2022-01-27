@@ -1,5 +1,5 @@
 
-import '../styles/signup.css'
+import '../styles/signup.scss'
 
 
 import PassInput from "../components/PassInput/passinput";

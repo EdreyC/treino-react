@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from '../hooks/useAuth';
-import "../styles/profile.css"
+import "../styles/profile.scss"
 
 
 function Profile(){
@@ -37,7 +37,7 @@ function Profile(){
 
                 <div className="posts">
                     <div className="informacoes">
-                        <img width='50px'className="avatarUser"src={user?.avatar} alt=""/>
+                        <img width='50px' src={user?.avatar} alt=""/>
                         <div>
                             <Link className="user" to='/profile'>{user?.name}</Link>
                             <span>21:41 23/01/2022</span>

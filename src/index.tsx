@@ -1,10 +1,10 @@
-import { render } from "react-dom";
+import ReactDOM from 'react-dom'
+
 import App from './App'
 
+ReactDOM.render(
 
+    <App />,
 
-render(
- 
-    <App/>,
-  document.getElementById("root")
-);
+  document.getElementById('root')
+)

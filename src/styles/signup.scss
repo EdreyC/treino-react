@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 .signup-container{
     display: flex;
     justify-content: center;
@@ -17,7 +19,7 @@
     
 }
 .page-signup a{
-    color: var(--blue);
+    color:  v.$blue;
 }
 .page-signup span{
     text-align: center;
@@ -26,7 +28,7 @@
 }
 .signup-title{
     font-size: 50px;
-    color: var(--blue);
+    color: v.$blue;
     margin-bottom: 2rem;
 
 }

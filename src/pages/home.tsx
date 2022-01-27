@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { FiSend } from "react-icons/fi";
-import '../styles/home.css'
+import '../styles/home.scss'
 import { FormEvent, useState } from "react";
 import { db } from "../services/firebase";
 import { ref, set } from "firebase/database";
@@ -14,10 +14,7 @@ function Home(){
 
     async function handleNewPost(event: FormEvent) {
         event.preventDefault();
-        
-        if(newPost.trim() === ''){
-            return;
-        }
+    
     
     }
 
