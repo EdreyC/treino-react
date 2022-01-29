@@ -14,14 +14,79 @@
         
         display: flex;
         flex-direction: column;
+        a{
+
+          color: black;
+          margin: 15px;
+        }
       }
     
       img{
-        border-radius: 100%;
+        border-radius: 50%;
         outline: 7px solid #ffffff;
         margin-top: -3rem;
       }
     }
+    
+  .container-posts{
+    display: flex;
+    justify-content: center;
+    padding-right: 20rem;
+  }
+  .posts{
+    width: 68%;
+    border: 1px solid #d4d4d4;
+    color: black;
+    /*margin-left: 20%;
+    margin-right: 30%;*/
+    border-radius: 0px 12px 12px 12px;
+
+    padding: 1rem;
+
+    a{
+
+      color: black;
+
+      &:hover{
+        color: v.$blue;
+        text-decoration: underline;
+      }
+
+    }
+    span{
+
+      font-size: 12px;
+
+    }
+    
+    
+  }
+  .userName{
+    margin-left: 2rem;
+  }
+
+  .user{
+    font-weight: 700;
+  }
+
+
+  .informacoes{
+    display: flex;
+    align-items: center;
+    div{
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    img{
+      border-radius: 50%;
+    }
+  }
+
+
+
+
 }
 
 
@@ -34,69 +99,7 @@
   padding-bottom: 17%;
 }
 
-.linksProfile a{
 
-  color: black;
-  margin: 15px;
-}
 /*.linksProfile{
 
 }*/
-.container-posts{
-  display: flex;
-  justify-content: center;
-  padding-right: 20rem;
-}
-.posts{
-  width: 68%;
-  border: 1px solid #d4d4d4;
-  color: black;
-  /*margin-left: 20%;
-  margin-right: 30%;*/
-  border-radius: 0px 12px 12px 12px;
-
-  padding: 1rem;
-
-  a{
-
-    color: black;
-
-    &:hover{
-      color: v.$blue;
-      text-decoration: underline;
-    }
-
-  }
-  span{
-
-    font-size: 12px;
-
-  }
-  
-  
-}
-.userName{
-  margin-left: 2rem;
-}
-
-.user{
-  font-weight: 700;
-}
-
-
-.informacoes{
-  display: flex;
-  align-items: center;
-  div{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  img{
-    border-radius: 50%;
-  }
-}
-
-
-

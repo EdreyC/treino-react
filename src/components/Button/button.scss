@@ -15,8 +15,9 @@
     gap: 3.5px;
     outline: none;
     justify-content: center;
-}
-.button:hover{
-    cursor: pointer;
-    background-color: #1f79ff;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: #1f79ff;
+    }
 }

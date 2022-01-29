@@ -16,10 +16,14 @@ function Profile(){
             <div className="banner"></div>
 
             <div className="container-profile">
+           
 
-                <img width='150px'className="avatar"src={user?.avatar} alt=""/>
+            <img width='150px' src={user?.avatar} alt=""/>
+ 
                 <div className="profile-data">
+
                     <h1 className="userName">{user?.name}</h1>
+                    
                     <div className="linksProfile">
                         <Link to="">Seguidores</Link>
                         <span>0</span>

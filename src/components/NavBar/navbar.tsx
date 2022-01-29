@@ -1,4 +1,3 @@
-import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './navbar.scss'
 import Button from '../Button/button'
